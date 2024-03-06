@@ -1,0 +1,99 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--primary-purple);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.login .card {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem; /* Space between login and register sections */
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login form input {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5); /* Slightly more opaque for legibility */
+    width: calc(100% - 20px); /* Full width minus padding */
+}
+
+.login form input::placeholder {
+    color: #eee;
+}
+
+.login form .login-btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.login form .login-btn:hover {
+    background-color: purple;
+}
+
+.login .register-section {
+    text-align: center;
+}
+.btn {
+    background-color:purple; /* Replace with the hex color code of your Login button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.login .register-section span {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.login .register-section a {
+    background-color: purple;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login .register-section a:hover {
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .login .card {
+        width: 90%;
+        padding: 1rem;
+    }
+}
